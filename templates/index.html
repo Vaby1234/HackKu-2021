@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <!-- Meta Shit -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Boostrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Random Generator</title>
+
+    <style>
+        form { 
+            margin: 0 auto;
+            margin-top: 10vh; 
+            width:250px;
+        }
+
+        h1 {
+            margin-top: 10vh;
+            text-align: center;
+        }
+
+        .horizontalRule {
+            text-align: center;
+            height: 10px;
+            width: 50vh;
+            background-color: blueviolet;
+        }
+
+        
+    </style>
+    
+</head>
+<body>
+
+    <div class = "container">  
+        <h1>WELCOME TO THE HACKATHON GENERATOR</h1>
+        <div class = "horizontalRule"></div>
+            <form action='/' method='POST'>
+                <p>{{idea}}</p>
+                <input type='submit' value='Click me for some bullshit'/>
+            </form>
+    </div>  
+
+</body>
+</html>

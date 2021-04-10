@@ -24,7 +24,7 @@
         }
 
         body {
-            background-image: url('../background.jpeg');
+            background-image: url({{ url_for('static', filename='background.jpeg') }});
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
@@ -77,7 +77,7 @@
 <body>
 
     <div class = "container">  
-        <h1>WELCOME TO THE HACKATHON GENERATOR</h1>
+        <h1>HACKATHON IDEA GENERATOR</h1>
         <div class = "horizontalRule"></div>
             <hr>
             <div id = 'result'><p>{{idea}}</p></div>
@@ -85,7 +85,7 @@
         <div class = "horizontalRule"></div>
 
             <form action='/' method='POST'>
-                <p>{{idea}}</p>
+              
                 <input id = "button" type='submit' value='Click me for some bullshit'/>
             </form>
     </div>  

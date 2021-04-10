@@ -12,7 +12,7 @@ def generate():
         idea = random.choice(data['Ideas'])
         return render_template("index.html", idea = idea)
     else:
-        return render_template("index.html", idea="eat my booty") 
+        return render_template("index.html", idea="Eat my booty") 
 
 if __name__ == "__main__":
     app.run(debug=True)
